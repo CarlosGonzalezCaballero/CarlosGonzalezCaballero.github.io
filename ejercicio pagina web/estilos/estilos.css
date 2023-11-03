@@ -1,0 +1,26 @@
+/* Autor: carlos*/
+
+body.formulario{
+    text-align: center;
+    background-color:rgb(61, 61, 61);
+    color:white;
+    font-family: 'Roboto', sans-serif; 
+}
+h1.formul{
+    color: aqua;
+}
+body.izq {
+    background-color: #060608;
+  }
+body.indice {
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body.der {
+    background-color: rgb(59, 102, 194);
+}
+a {
+    color:rgb(255, 255, 255);
+}
