@@ -9,23 +9,27 @@ body.formulario{
 h1.formul{
     color: aqua;
 }
-body.izq {
-    background-color: #060608;
-  }
+
 body.indice {
     background-image: url("../img/fondo.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-body.der {
-    background-color: rgb(59, 102, 194);
+    color: aliceblue;
 }
 a {
     color:rgb(255, 255, 255);
 }
 .caracteristicas {
-    column-rule: black solid 2px;
+    column-gap: 3em;
     columns: 3;
     text-align: justify;
+}
+.aside {
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(102, 95, 95);
+    border-color: black;
+    
 }
