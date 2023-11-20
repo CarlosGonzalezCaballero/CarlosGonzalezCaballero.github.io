@@ -20,16 +20,35 @@ body.indice {
 a {
     color:rgb(255, 255, 255);
 }
-.caracteristicas {
-    column-gap: 3em;
-    columns: 3;
+.columa1 {
+    column-count: 1;
     text-align: justify;
+    float: left;
+    transition: 0.3;
+}
+.columa2 {
+    column-count: 1;
+    text-align: justify;
+    float: left;
+    transition: 0.3;
+}
+.columa3 {
+    column-count: 1;
+    text-align: justify;
+    float: left;
+    transition: 0.3;
 }
 .aside {
     float: left;
-    width: 200px;
-    height: 100%;
+    width: 150px;
+    height: 98%;
     background-color: rgb(102, 95, 95);
     border-color: black;
+    position: absolute;
     
+}
+.section {
+    float: right;
+    width: calc(95% - 150px);
+    margin-right: 20px;
 }
