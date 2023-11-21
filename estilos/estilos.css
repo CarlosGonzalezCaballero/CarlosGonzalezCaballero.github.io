@@ -26,18 +26,7 @@ a {
     float: left;
     transition: 0.3;
 }
-.columa2 {
-    column-count: 1;
-    text-align: justify;
-    float: left;
-    transition: 0.3;
-}
-.columa3 {
-    column-count: 1;
-    text-align: justify;
-    float: left;
-    transition: 0.3;
-}
+
 .aside {
     float: left;
     width: 150px;
@@ -51,4 +40,16 @@ a {
     float: right;
     width: calc(95% - 150px);
     margin-right: 20px;
+}
+.header {
+    height: 55px;
+    background-color: black;
+}
+.logo {
+    margin-left: 5%;
+    width: 50px;
+}
+.nombre {
+    margin-top: 0;
+    text-align: right;
 }
