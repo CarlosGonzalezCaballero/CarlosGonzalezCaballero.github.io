@@ -33,7 +33,7 @@ a {
     height: 98%;
     background-color: rgb(102, 95, 95);
     border-color: black;
-    position: absolute;
+    position: fixed;
     
 }
 .section {
@@ -44,12 +44,16 @@ a {
 .header {
     height: 55px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .logo {
     margin-left: 5%;
-    width: 50px;
+    width: 50%;
 }
 .nombre {
     margin-top: 0;
-    text-align: right;
+    text-align: center;
 }
