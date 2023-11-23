@@ -9,34 +9,50 @@ body.formulario{
 h1.formul{
     color: aqua;
 }
-
-body.indice {
+h1 {
+    background-color: #282f40;
+    text-align: center;
+    color: #d7dbe6;
+    font-size: 32px;
+}
+.indice {
     background-image: url("../img/fondo.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     color: aliceblue;
+    
 }
 a {
     color:rgb(255, 255, 255);
 }
-.columa1 {
+.columnas{
     column-count: 1;
     text-align: justify;
     float: left;
-    transition: 0.3;
+    border: 1px solid silver;
+    background-color: #343e57;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 16px;
 }
 
 .aside {
     float: left;
-    width: 150px;
-    height: 98%;
+    width: 160px;
+    height: 150%;
     background-color: rgb(102, 95, 95);
-    border-color: black;
+    margin-top: 60px;
+    padding: 2px;
+    box-sizing: border-box;
+    border: solid 3px rgb(102, 95, 95);
+    box-shadow: 2px 5px 5px;
     position: fixed;
     
-}
-.section {
+} 
+    
+.section { 
     float: right;
     width: calc(95% - 150px);
     margin-right: 20px;
@@ -48,12 +64,17 @@ a {
     top: 0;
     left: 0;
     width: 100%;
+    
 }
-.logo {
-    margin-left: 5%;
-    width: 50%;
-}
-.nombre {
-    margin-top: 0;
-    text-align: center;
+.sobremi {
+    text-align: left;
+    font-size: 26px;
+    color: white;
+    border: gray solid 1px;
+    background-color: gray;
+    height: 100%;
+    width: auto;
+    margin-top: 2px;
+    margin-left: 10px;
+    padding: 20px;
 }
