@@ -1,8 +1,10 @@
 /* Autor: carlos*/
 
-body.formulario{
-    text-align: center;
-    background-color:rgb(61, 61, 61);
+.formulario{
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color:white;
     font-family: 'Roboto', sans-serif; 
 }
@@ -14,6 +16,7 @@ h1 {
     text-align: center;
     color: #d7dbe6;
     font-size: 32px;
+    margin-top: 80px;
 }
 .indice {
     background-image: url("../img/fondo.jpg");
@@ -21,23 +24,26 @@ h1 {
     background-attachment: fixed;
     background-size: cover;
     color: aliceblue;
-    
+    font-family: 'Roboto', sans-serif; 
 }
 a {
     color:rgb(255, 255, 255);
 }
 .columnas{
-    column-count: 1;
+    column-count: 3;
+    column-rule: rgb(102, 102, 102) solid 2px;
     text-align: justify;
     float: left;
-    border: 1px solid silver;
-    background-color: #343e57;
+    border: 2px solid #343e57;
     border-radius: 10px;
     padding: 10px;
     transition: 0.3s;
     font-size: 16px;
+    
 }
-
+.columnas p{
+    break-after: column;
+}
 .aside {
     float: left;
     width: 160px;
@@ -49,9 +55,20 @@ a {
     border: solid 3px rgb(102, 95, 95);
     box-shadow: 2px 5px 5px;
     position: fixed;
-    
+    font-size: 20px;
 } 
-    
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    padding-bottom: 18px;
+    background: rgb(102, 95, 95);
+    text-align: center;
+}    
+#footer li{
+    list-style-type: none;
+}
 .section { 
     float: right;
     width: calc(95% - 150px);
@@ -70,11 +87,31 @@ a {
     text-align: left;
     font-size: 26px;
     color: white;
-    border: gray solid 1px;
-    background-color: gray;
+    background-image: url("../img/fondocristal.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     height: 100%;
     width: auto;
     margin-top: 2px;
     margin-left: 10px;
     padding: 20px;
+}
+#contenido {
+    float: right;
+    width: calc(100% - 180px);
+    text-align: center;
+}
+.titulo {
+    text-align: center;
+}
+.curriculum {
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto', sans-serif; 
 }
