@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="../estilos/estilos.css">
-  </head>
-  <body class="formulario">
-    <header class="header">
-      <div class="titulo">
-        <p aling="center"> Carlos Gonzalez Caballero </p>
-      </div>
-    </header>
-    <aside class="aside">
-      <ul>
-        <li><a href="../index.html" target="_self">Indice</a></li>
-        <li><a href="formulario.html" target="_self">Formulario</a></li>
-        <li><a href="curriculum.html" target="_self">Curriculum</a></li>
-      </ul>
-    </aside>
-    <form action="ejemplo.php" method="get" >
+
+<head>
+  <meta charset="utf-8">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="../estilos/estilos.css">
+</head>
+<aside class="aside">
+  <ul>
+    <li><a href="../index.html" target="_self">Indice</a></li>
+    <li><a href="formulario.html" target="_self">Formulario</a></li>
+    <li><a href="curriculum.html" target="_self">Curriculum</a></li>
+  </ul>
+</aside>
+<body class="formulario">
+  <header class="header">
+    <div class="titulo">
+      <p aling="center"> Carlos Gonzalez Caballero </p>
+    </div>
+  </header>
+  
+  <section id="contenido">
+    <form action="ejemplo.php" method="get">
       <h1 class="formul">Formulario Prueba</h1>
       <p>Nombre: <input type="text" name="nombre" size="40"></p>
       <p>Fecha de nacimiento: <input type="number" name="nacido" min="1900"></p>
@@ -27,13 +30,14 @@
         <input type="radio" name="hm" value="m"> Mujer
       </p>
       <p>
-        <input type="checkbox" name="Verificacion" > Acepto la politica de privacidas
+        <input type="checkbox" name="Verificacion"> Acepto la politica de privacidas
       </p>
       <p>
         <input type="submit" value="Enviar">
         <input type="reset" value="Borrar">
       </p>
     </form>
+  </section>
+</body>
 
-  </body>
 </html>
