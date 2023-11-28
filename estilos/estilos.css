@@ -25,7 +25,7 @@ h1.formul{
 a {
     color:rgb(255, 255, 255);
 }
-.columnas{
+.caracteristicas{
     column-count: 3;
     column-rule: rgb(102, 102, 102) solid 2px;
     text-align: justify;
@@ -37,10 +37,22 @@ a {
     font-size: 16px;
     
 }
-.columnas p{
+.caracteristicas p{
     break-after: column;
     text-align: center;
 }
+.actividades {
+    column-count: 1;
+    text-align: justify;
+    float: left;
+    border: 1px solid black;
+    background-color: rgb(177, 175, 175);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
 .aside {
     float: left;
     width: 160px;
