@@ -1,25 +1,54 @@
 /* Autor: carlos*/
 
+.header {
+    height: 55px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.aside {
+    float: left;
+    width: 160px;
+    height: 150%;
+    background-color: rgb(102, 95, 95);
+    margin-top: 60px;
+    padding: 2px;
+    box-sizing: border-box;
+    border: solid 3px rgb(102, 95, 95);
+    box-shadow: 2px 5px 5px;
+    position: fixed;
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+} 
+.aside a {
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.aside a:hover {
+    background-color: rgb(153, 161, 161) !important;
+    
+}
+#contenido { /* Es el contenido de la pagina Indice*/
+    float: right;
+    width: calc(100% - 180px);
+    text-align: center;
+}
+
 .formulario{
     background-image: url("../img/fondo.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    color:white;
-    font-family: 'Roboto', sans-serif; 
 }
-h1.formul{
-    color: aqua;
-    
-}
-h1 {
-    background-color: rgb(102, 102, 102);
-    border: 2px solid black;
-    color: black;
-    margin-top: 60px;
-    text-align: center;
-    font-size: 30px;
-}
+
 .indice {
     background-image: url("../img/fondo.jpg");
     background-repeat: no-repeat;
@@ -42,55 +71,36 @@ a {
     background-color: rgb(177, 175, 175);
     padding: 10px;
     font-size: 16px;
-    
+    font-weight: bolder;
+
 }
 .caracteristicas p{
     break-after: column;
     text-align: center;
 }
 .actividades {
-    column-count: 1;
+    column-count: 2;
+    column-rule: rgb(102, 102, 102) solid 2px;
     text-align: center;
     float: left;
-    border: 1px solid black;
-    background-color: rgb(177, 175, 175);
-    border-radius: 10px;
-    padding: 9px;
-    transition: 0.3s;
-    font-size: 16px;
     color: black;
-}
-.pagina {
-   border: black 3px solid;
+    border: 2px solid black;
+    background-color: rgb(158, 155, 155);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bolder;
 
 }
-.pagina.img {
+
+.youtube {
+    text-align: center;
     float: left;
+    background-color: rgb(158, 155, 155);
+    border: 2px solid black;
+    color: black;
 }
-.aside {
-    float: left;
-    width: 160px;
-    height: 150%;
-    background-color: rgb(102, 95, 95);
-    margin-top: 60px;
-    padding: 2px;
-    box-sizing: border-box;
-    border: solid 3px rgb(102, 95, 95);
-    box-shadow: 2px 5px 5px;
-    position: fixed;
-    font-size: 20px;
-    
-} 
-.aside a {
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    
-}
-.aside a:hover {
-    background-color: rgb(153, 161, 161) !important;
-    
-}
+
+
 footer {
     position: fixed;
     bottom: 0;
@@ -101,20 +111,8 @@ footer {
     text-align: center;
     clear: both;
 }    
-.section { 
-    float: right;
-    width: calc(95% - 150px);
-    margin-right: 20px;
-}
-.header {
-    height: 55px;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    
-}
+
+
 .sobremi {
     text-align: left;
     font-size: 26px;
@@ -123,14 +121,8 @@ footer {
     width: auto;
     margin-left: 10px;
 }
-#contenido {
-    float: right;
-    width: calc(100% - 180px);
-    text-align: center;
-}
-.titulo {
-    text-align: center;
-}
+
+
 .curriculum {
     background-image: url("../img/fondo.jpg");
     background-repeat: no-repeat;
@@ -139,3 +131,20 @@ footer {
     color: white;
     font-family: 'Roboto', sans-serif; 
 }
+
+/*prueba
+      <h1 class="formul">Formulario Prueba</h1>
+      <p>Nombre: <input type="text" name="nombre" size="40"></p>
+      <p>Fecha de nacimiento: <input type="number" name="nacido" min="1900"></p>
+      <p>Sexo:
+        <input type="radio" name="hm" value="h"> Hombre
+        <input type="radio" name="hm" value="m"> Mujer
+      </p>
+      <p>
+        <input type="checkbox" name="Verificacion"> Acepto la politica de privacidas
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+      </p>
+*/
