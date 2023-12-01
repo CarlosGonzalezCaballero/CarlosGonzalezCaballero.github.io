@@ -22,14 +22,14 @@
   </header>
   <br><br><br><br>
   <section id="contenido">
-    <form action="formulario.php" method="get">
+    <form>
       <fieldset>
         <!--Diseño de marco en el formulario-->
         <legend>
-          <h3>Formulario de Registro</h3>
+          <h3><b>Formulario de Registro</b></h3>
         </legend>
         <!--Encabezado del formulario-->
-        <h1 aling="center">Datos Personales</h1>
+        <h1><b>Datos Personales</b></h1>
         <!--Etiqueta donde pone el nombre-->
         <label for="nombre">Nombre:*</label>
         <!--textBox del nombre-->
@@ -39,26 +39,39 @@
         <label for="correo">Correo Electronico:</label>
         <input type="text" ; name="correo">
         <label for="direccion">Direccion:</label>
-        <input type="text"; name="direccion"><br><br>
+        <input type="text" ; name="direccion"><br><br>
         <label for="fecha">Fecha de nacimiento:*</label>
-        <input type="date" name="nacimiento" id="fecha"required> <br><br>
+        <input type="date" name="nacimiento" id="fecha" required>
+        <label for="color">Color favorito</label>
+        <input type="color" ; name="color"><br><br>
 
         <!--Creo la etiqueta y le pongo el boton y
          pongo el mismo nombre para que solo se marque uno-->
-         <label>Genero:*</label>
-        <input type="radio"; name="Genero"; value="Masculino" required>
+        <label>Genero:*</label>
+        <input type="radio" ; name="Genero" ; value="Masculino" required>
         <label for="hombre">Masculino</label>
-        <input type="radio"; name="Genero"; value="Femenino" required>
+        <input type="radio" ; name="Genero" ; value="Femenino" required>
         <label for="mujer">Femenino</label>
-        <input type="radio"; name="Genero"; value="Prefiero No Contestar" required>
+        <input type="radio" ; name="Genero" ; value="Prefiero No Contestar" required>
         <label for="nocontestar">Prefiero no contestar</label><br><br>
-        <a href="enviado.html"><img src="../img/boton-enviar.png" alt="boton"></a>
+        <label>Idiomas:</label>
+        <input type="checkbox" name="Idioma1" value="Inglés"><label for="idioma1">Inglés</label>
+        <input type="checkbox" name="Idioma2" value="Francés"><label for="idioma2">Francés</label>
+        <input type="checkbox" name="Idioma3" value="Alemán"><label for="idioma3">Alemán</label>
+        <input type="checkbox" name="Idioma5" value="Otro"><label for="idioma5">Otro:</label>
+        <input type="text" placeholder="Escriba otro idioma"><br><br>
+        <button onclick="Enviar()">Enviar</button>
       </fieldset>
     </form>
   </section>
+  <script>
+    function Enviar() {
+      alert("Gracias por rellenar el formulario! :)");
+    }
+    </script>
 </body>
-<footer>
-  Página desarrollada por <a href="https://github.com/CarlosGonzalezCaballero">Carlos González Caballero</a>
-</footer>
+<footer><b>
+    Página desarrollada por <a href="https://github.com/CarlosGonzalezCaballero">Carlos González Caballero</a>
+  </b></footer>
 
 </html>
