@@ -49,7 +49,10 @@
     background-size: cover;
     color: white;
 }
-
+.formulario form {
+    background-color: rgb(177, 175, 175);
+    color: black;
+}
 .indice {
     background-image: url("../img/fondo.jpg");
     background-repeat: no-repeat;
