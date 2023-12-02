@@ -1,4 +1,11 @@
 /* Autor: carlos*/
+body {
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
 
 .header {
     height: 55px;
@@ -12,6 +19,7 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+
 .aside {
     float: left;
     width: 160px;
@@ -26,46 +34,60 @@
     font-size: 20px;
     color: white;
     font-family: 'Roboto', sans-serif;
-} 
+}
+
 .aside a {
     color: white;
     border-radius: 5px;
     text-decoration: none;
 }
+
 .aside a:hover {
     background-color: rgb(153, 161, 161) !important;
-    
+
 }
-#contenido { /* Es el contenido de la pagina Indice*/
+
+#contenido {
+    /* Es el contenido de la pagina Indice*/
     float: right;
     width: calc(100% - 180px);
     text-align: center;
 }
 
-.formulario{
-    background-image: url("../img/fondo.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-}
-.formulario form {
+.formulario fieldset {
     background-color: rgb(177, 175, 175);
     color: black;
+    border-radius: 10px;
 }
-.indice {
-    background-image: url("../img/fondo.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: aliceblue;
-    font-family: 'Roboto', sans-serif; 
-    
+
+.curriculum {
+    background-color: rgb(177, 175, 175);
+    border: 2px;
+    border-radius: 15px;
+    margin-left: 200px;
 }
+
+.curriculum fieldset {
+    border-radius: 15px;
+}
+
+.enviado {
+    background-color: rgb(177, 175, 175);
+    margin-top: 20px;
+    margin-left: 250px;
+    border-radius: 20px;
+    padding: 15px;
+    text-shadow: 7px 4px 5px blue;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
 a {
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
-.caracteristicas{
+
+.caracteristicas {
     column-count: 3;
     column-rule: rgb(102, 102, 102) solid 2px;
     text-align: justify;
@@ -78,10 +100,12 @@ a {
     font-weight: bolder;
 
 }
-.caracteristicas p{
+
+.caracteristicas p {
     break-after: column;
     text-align: center;
 }
+
 .actividades {
     column-count: 2;
     column-rule: rgb(102, 102, 102) solid 2px;
@@ -92,7 +116,7 @@ a {
     background-color: rgb(158, 155, 155);
     padding: 10px;
     font-size: 16px;
-   
+
 }
 
 .youtube {
@@ -113,9 +137,7 @@ footer {
     background: rgb(102, 95, 95);
     text-align: center;
     clear: both;
-}    
-
-
+}
 .sobremi {
     text-align: left;
     font-size: 26px;
@@ -124,13 +146,29 @@ footer {
     width: auto;
     margin-left: 10px;
 }
+.headercv {
+    background-color: rgb(91, 93, 93);
+    height: 250px;
+    padding: 10px;
+}
 
+.perfil {
+    float: left;
+    width: 150px;
+    margin: 10px;
+    height: 200px;
+    border: 2px black solid;
+}
 
-.curriculum {
-    background-image: url("../img/fondo.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    font-family: 'Roboto', sans-serif; 
+.descripcion {
+    float: left;
+    margin-left: 10px;/ margin-top: 25px;
+    position: relative;
+    width: 550px;
+}
+
+ul.contacto {
+    float: right;
+    margin-right: 40px;
+    margin-top: 70px;
 }
