@@ -22,53 +22,68 @@
   </header>
   <br><br><br><br>
   <section id="contenido">
-    <form>
+    <main>
+    <form action="enviado.html" method="get" >
       <fieldset>
-        <!--Diseño de marco en el formulario-->
-        <legend>
-          <h3><b>Formulario de Registro</b></h3>
-        </legend>
-        <!--Encabezado del formulario-->
-        <h1><b>Datos Personales</b></h1>
-        <!--Etiqueta donde pone el nombre-->
-        <label for="nombre">Nombre:*</label>
-        <!--textBox del nombre-->
-        <input type="text" ; name="nombre" required>
-        <label for="apellidos">Apellidos:*</label>
-        <input type="text" ; name="apellidos" required><br><br>
-        <label for="correo">Correo Electronico:</label>
-        <input type="text" ; name="correo">
-        <label for="direccion">Direccion:</label>
-        <input type="text" ; name="direccion"><br><br>
-        <label for="fecha">Fecha de nacimiento:*</label>
-        <input type="date" name="nacimiento" id="fecha" required>
-        <label for="color">Color favorito</label>
-        <input type="color" ; name="color"><br><br>
+      <fieldset>
+        <legend><b>
+            <h2>Registrarse</h2>
+          </b></legend>
 
-        <!--Creo la etiqueta y le pongo el boton y
+        <label for="usuario">Usuario:*</label>
+        <input type="text" id="usuario" name="username" size="15" maxlength="15" required><br><br>
+        <label for="contraseña">Contraseña:*</label>
+        <input type="password" id="contraseña" name="contraseña" size="8" minlength="6" maxlength="15" required><br><br>
+        <label for="correo">Correo Electronico:*</label>
+        <input type="email" ; name="correo" required>
+      </fieldset>
+        <fieldset>
+          <!--Diseño de marco en el formulario-->
+          <legend>
+            <h3><b>Datos Personales</b></h3>
+          </legend>
+          <!--Encabezado del formulario-->
+          <!--Etiqueta donde pone el nombre-->
+          <label for="nombre">Nombre:*</label>
+          <!--textBox del nombre-->
+          <input type="text" ; name="nombre" required>
+          <label for="apellidos">Apellidos:*</label>
+          <input type="text" ; name="apellidos" required><br><br>
+          <label for="direccion">Direccion:</label>
+          <input type="text" ; name="direccion"><br><br>
+          <label for="fecha">Fecha de nacimiento:*</label>
+          <input type="date" name="nacimiento" id="fecha" required>
+          <label for="color">Color favorito</label>
+          <input type="color" ; name="color"><br><br>
+
+          <!--Creo la etiqueta y le pongo el boton y
          pongo el mismo nombre para que solo se marque uno-->
-        <label>Genero:*</label>
-        <input type="radio" ; name="Genero" ; value="Masculino" required>
-        <label for="hombre">Masculino</label>
-        <input type="radio" ; name="Genero" ; value="Femenino" required>
-        <label for="mujer">Femenino</label>
-        <input type="radio" ; name="Genero" ; value="Prefiero No Contestar" required>
-        <label for="nocontestar">Prefiero no contestar</label><br><br>
-        <label>Idiomas:</label>
-        <input type="checkbox" name="Idioma1" value="Inglés"><label for="idioma1">Inglés</label>
-        <input type="checkbox" name="Idioma2" value="Francés"><label for="idioma2">Francés</label>
-        <input type="checkbox" name="Idioma3" value="Alemán"><label for="idioma3">Alemán</label>
-        <input type="checkbox" name="Idioma5" value="Otro"><label for="idioma5">Otro:</label>
-        <input type="text" placeholder="Escriba otro idioma"><br><br>
-        <button onclick="Enviar()">Enviar</button>
+          <label>Genero:*</label>
+          <input type="radio" ; name="Genero" ; value="Masculino" required>
+          <label for="hombre">Masculino</label>
+          <input type="radio" ; name="Genero" ; value="Femenino" required>
+          <label for="mujer">Femenino</label>
+          <input type="radio" ; name="Genero" ; value="Prefiero No Contestar" required>
+          <label for="nocontestar">Prefiero no contestar</label><br><br>
+          <label>Idiomas:</label>
+          <input type="checkbox" name="Idioma1" value="Inglés"><label for="idioma1">Inglés</label>
+          <input type="checkbox" name="Idioma2" value="Francés"><label for="idioma2">Francés</label>
+          <input type="checkbox" name="Idioma3" value="Alemán"><label for="idioma3">Alemán</label>
+          <input type="checkbox" name="Idioma5" value="Otro"><label for="idioma5">Otro:</label>
+          <input type="text" placeholder="Escriba otro idioma"><br><br>
+          <button type="submit"><img src="../img/boton-enviar.png" alt="imagen" width="128" height="38" style="vertical-align: middle;"></button>
+          <button type="reset"><img src="../img/boton-borrar.png" alt="imagen" width="45" height="45" style="vertical-align: middle;"></button>
+        </fieldset>
       </fieldset>
     </form>
+  </main>
   </section>
+  <!--<button onclick="Enviar()">Enviar</button>
   <script>
     function Enviar() {
       alert("Gracias por rellenar el formulario! :)");
     }
-    </script>
+  </script>-->
 </body>
 <footer><b>
     Página desarrollada por <a href="https://github.com/CarlosGonzalezCaballero">Carlos González Caballero</a>
